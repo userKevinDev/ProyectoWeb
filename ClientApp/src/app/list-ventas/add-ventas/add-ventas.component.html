@@ -1,0 +1,81 @@
+<div class="row">
+  <div class="col-12">
+    <h1>Nueva Venta</h1>
+  </div>
+</div>
+<div class="row mt-2 container-informacion ">
+  <div class="col-lg-6 col-sm-12 offset-lg-1">
+    <div class="row encabezado">
+      <div class="col-12">
+        <h4>Cliente</h4>
+      </div>
+    </div>
+    <div class="row pt-1 c-body">
+      <div class="col-12">
+          <div class="row">
+              <div class="col-10">
+                  <input class="form-control" type="text" placeholder="Identificacion" required>
+              </div>
+          </div>
+          <div class="row mt-1">
+              <div class="col-10">
+                <div class="row align-items-center">
+                  <div class="col-6"><h5>Identificacion:</h5><span>NN</span></div>
+                  <div class="col-6 "><h5>Nombres:</h5><span>NN</span></div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4  offset-1">
+      <div class="row encabezado">
+        <h4 class="pl-1">Detalles</h4>
+      </div>
+
+      <div class="row c-body">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6"><h5>Codigo:</h5></div>
+              <div class="col-6"><h5>F012</h5></div>
+            </div>
+            <div class="row">
+                <div class="col-6"><h5>Fecha:</h5></div>
+                <div class="col-6"><h5>{{fechaHoy}}</h5></div>
+            </div>
+            <div class="row">
+              <div class="col-6"><h5>Nº Productos:</h5></div>
+              <div class="col-6"><h5>0</h5></div>
+          </div>
+          <div class="row">
+            <div class="col-6"><h5>Total Compra:</h5></div>
+            <div class="col-6"><h5>0</h5></div>
+        </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="row container-productos mt-2">
+   <div class="col-lg-4" *ngFor ="let item of listProduct">
+     <div class="card">
+       <div class="card-header">
+          <h5>{{item.marca}}</h5>
+       </div>
+       <div class="card-body">
+         <div class="row">
+           <div class="col-6">Categoria:</div>
+           <div class="col-6">{{item.categoria}}</div>
+         </div>
+         <div class="row">
+          <div class="col-6">Tamaño:</div>
+          <div class="col-6">{{item.size}}</div>
+        </div>
+        <div class="row">
+          <div class="col-6">Precio xUnd</div>
+          <div class="col-6">${{item.precioVenta}}</div>
+        </div>
+       </div>
+     </div>
+   </div>
+</div>
