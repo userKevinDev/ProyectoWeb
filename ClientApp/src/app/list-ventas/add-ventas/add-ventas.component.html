@@ -56,26 +56,22 @@
       </div>
   </div>
 </div>
-<div class="row container-productos mt-2">
-   <div class="col-lg-4" *ngFor ="let item of listProduct">
-     <div class="card">
-       <div class="card-header">
-          <h5>{{item.marca}}</h5>
-       </div>
-       <div class="card-body">
-         <div class="row">
-           <div class="col-6">Categoria:</div>
-           <div class="col-6">{{item.categoria}}</div>
-         </div>
-         <div class="row">
-          <div class="col-6">Tamaño:</div>
-          <div class="col-6">{{item.size}}</div>
+<div class="row justify-content-center mt-3">
+  <div class="col-lg-8">
+    <div class="row">
+      <div class="col-lg-10"><h3>Productos</h3></div>
+    </div>
+    <div class="row">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="col-lg-2"><h4>Referencia</h4></div>
+          <div class="col-lg-2"><h4>Marca</h4></div>
+          <div class="col-lg-2"><h4>Cantidad</h4></div>
+          <div class="col-lg-2"><h4>xUnidad</h4></div>
+          <div class="col-lg-2"><h4>Total</h4></div>
         </div>
-        <div class="row">
-          <div class="col-6">Precio xUnd</div>
-          <div class="col-6">${{item.precioVenta}}</div>
-        </div>
-       </div>
-     </div>
-   </div>
+      </div>
+    </div>
+  </div>
 </div>
+
